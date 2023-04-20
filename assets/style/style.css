@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: solid 1px red;
+}
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+main{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    height: 10vh;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+h1{
+    font-size: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h1, h2{
+    font-family: 'Nova Oval', cursive;
+    color: rgb(194, 88, 106);
+    margin: 1rem;
+}
+nav a{
+    font-family: 'Nova Oval', cursive;
+    color: rgb(243, 233, 242);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+ nav a:hover{
+    color: darkmagenta;
+    font-size: xx-large;
+}
+h1:hover{
+    color: darkmagenta;
+    transform: scale(1.1);
+}
+
+/* Up share between pages */
+
+/* Down home edit */
+
+#homemain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#homeimg1{
+    width: 60%;
+    height: 35vh;
+    object-fit: cover;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+#homeimg2{
+    width: 25%;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+.homecontainer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Nova Oval', cursive;
+    color: rgb(194, 88, 106);
+}
+#txtmain{
+    width: 30%;
+    text-align: center;
+    color: rgb(66, 3, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+
+/* Down about us edit */
+
+
+#aboutmain{
+    display: flex;
+    flex-direction: column;
+}
+.aboutbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutimg{
+    width: 30rem;
+    height: 20rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+.abouttxt{
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 25rem;
+    border-radius: 1rem;
+    font-family: 'Nova Oval', cursive;
+    color: rgb(66, 3, 45);
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+
+/* Down contact page edit */
+
+#contactimg{
+    width: 40%;
+    height: 40%;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+#contacttxt{
+    border-radius: 1rem;
+    font-family: 'Nova Oval', cursive;
+    color: rgb(66, 3, 45);
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+#contactfoo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer a{
+    font-family: 'Nova Oval', cursive;
+    color: rgb(102, 52, 85);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-weight: 800;
+    font-size: large;
+}
+footer a:hover{
+    color: rgb(173, 7, 110)
+}
+
+/* Information page edit */
+
+#informationtable{
+    text-align: center;
+    font-family: 'Nova Oval', cursive;
+    color: rgb(70, 6, 48);
+    margin-top: 3rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    ackground: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+tr, td, th{
+    padding: 2.5rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+
+/* benefits page edit */
+
+.benimg{
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+#bencontainer{
+    display: flex;
+}
+#benlist{
+    text-align: center;
+    font-family: 'Nova Oval', cursive;
+    color: rgb(139, 29, 101);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+ol>li{
+    margin: 2rem;
+}
