@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
@@ -26,12 +28,78 @@
     </header>
 
     <main>
-
+        <h1>RAFFLE</h1>
+        <h2>You can participate in a raffle. The prize is a coffee pot!</h2>
+        <div id="rafflecontainer">
+            <form action="./show_data.html" method="get">
+                <fieldset>
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="firstname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname">
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+                <fieldset>
+                    <legend>What color would you like the pot:</legend>
+                    <label for="colorpot">Color</label>
+                    <select name="colorpot" id="colorpot">
+                        <option value="#">Choose a color</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="pink">Pink</option>
+                        <option value="violet">Violet</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="#">Choose a country</option>
+                        <option value="mex">Mexico</option>
+                        <option value="can">Canada</option>
+                        <option value="spa">Spain</option>
+                        <option value="fin">Finland</option>
+                        <option value="fra">France</option>
+                        <option value="pol">Poland</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Options</legend>
+                    <label for="cash">Cash</label>
+                    <input type="radio" id="cash" name="pay" value="cash">
+                    <label for="cred">Credit Card</label>
+                    <input type="radio" id="cred" name="cred" value="cred">
+                    <label for="deb">Debit Card</label>
+                    <input type="radio" id="deb" name="deb" value="deb">
+                </fieldset>
+                <fieldset>
+                    <label class="textarea" for="services">Services:</label>
+                    <textarea name="services" id="services" cols="50" rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="terms">I accept terms and conditions</label>
+                    <input type="checkbox" id="terms" name="terms" value="accept">
+                </fieldset>
+                <input type="submit" name="submit" id="submit">
+            </form>
+            <div class="raffleimgcontainer">    
+                <img class="raffleimg" src="../image/icecream.jpg" alt="icecream" title="icecream">
+                <img class="raffleimg" src="../image/womancoffee.jpg" alt="woman coffee" title="woman coffee">
+            </div>
+        </div>
     </main>
 
     <footer>
-
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225470.8751949563!2d-82.7661037228742!3d27.99443410102957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c4f0e72a7009%3A0xd1666c19dbc4338d!2sAcuario%20de%20la%20Florida!5e0!3m2!1ses!2scl!4v1682030632554!5m2!1ses!2scl"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
-    
+
 </body>
+
 </html>

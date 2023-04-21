@@ -1,8 +1,29 @@
+
+
+/*-Al tener problemas con Mediaquery decidí hacer la task de 0.
+    -Supuse que si las bases estaban mal sentadas era más trabajo tratar de arreglarlo que hacerlo bien
+    ahora que se lo que es flex y mediaquery. Edit: Tenía razón, fue mucho más fácil corregir el mediaquery. 
+-He cambiado la paleta de colores usandos gradientes y nuevas fonts como mostró Kevin en un workshop.
+-Eh usado sombras en los h1 con la página que compartió Flor en clases.
+-He aprovechado de usar sólo flex como se me recomendó en los comentarios de la task3.
+-He usado el truco de poner un borde rojo a todo al inicio para ver cada cosa y 
+    el espacio que usaba, lo he borrado al terminar, tremendo.
+-He dado dimensiones al header, main y footer desde un inicio a todas las páginas para adaptarme el diseño.
+-He dejado funcionales los links de email y tel, también sugerido en los comentarios.
+-He usado div sólo para englobar 2 o más items también sugerido en la task 3.
+
+-No estoy contento con el resultado de Mediaquery, entiendo por qué se prefiere trabajar con Mobile First.
+-Bajo los 320px de pantalla el mediaquery se destruye, desconozco si es algo normal.
+
+-He subido a github el repo de la task 4: https://github.com/miquelmarco/task4v2.0
+-También lo he mandado en el rar por plataforma.
+
+Saludos, buen día! No se estresen corrigiendo tanto :D */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: solid 1px red;
 }
 body{
     background: rgb(238,174,202);
@@ -47,7 +68,7 @@ nav a{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
- nav a:hover{
+nav a:hover{
     color: darkmagenta;
     font-size: xx-large;
 }
@@ -181,7 +202,7 @@ footer a:hover{
     margin-top: 3rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    ackground: rgb(217,199,223);
+    background: rgb(217,199,223);
     background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
 }
 tr, td, th{
@@ -223,3 +244,275 @@ tr, td, th{
 ol>li{
     margin: 2rem;
 }
+
+/* raffle page edit */
+
+
+form{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Nova Oval', cursive;
+    font-size: x-large;
+    color: rgb(92, 6, 62);
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+fieldset{
+    margin: 2rem;
+    padding: 1rem;
+}
+.textarea{
+    display: flex;
+    justify-content: center;
+}
+#submi{
+    width: 5rem;
+    height: 2rem;
+}
+#rafflecontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    width:20%;
+    height: 100%;
+}
+.raffleimg{
+    width: 35rem;
+    height: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: rgb(217,199,223);
+    background: radial-gradient(circle, rgba(217,199,223,1) 1%, rgba(196,18,96,1) 100%);
+}
+.raffleimgcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    height: 100vh;
+}
+
+/* Mediaquery edit */
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    
+    /* home edit */
+    
+    header{
+        height: 25vh;
+    }
+    nav a{
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+    }
+    nav a:hover{
+        color: darkmagenta;
+        font-size: small;
+    }
+    .homecontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    #txtmain{
+        width: 90%;
+    }
+    #homeimg2{
+        width: 90%;
+    }
+    #homeimg1{
+        width: 90%;
+    }
+
+    /* about us edit */
+
+    h1{
+        font-size: xx-large;
+    }
+    .aboutbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutimg{
+        width: 100%;
+    }
+    .abouttxt{
+        width: 80%;
+    }
+
+    /* contact edit */
+
+    #contactimg{
+        width: 70%;
+        height: 70%;
+    }
+    #contacttxt{
+        width: 70vw;
+    }
+    #contactfoo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* information edit */
+
+    td, th, tr{
+        padding: 0;
+        height: 8vh;
+    }
+    h1, h2{
+        text-align: center;
+    }
+
+    /* benefits edit */
+
+    .benimg{
+        width: 80%;
+    }
+    #bencontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #benlist{
+        width: 90%;
+    }
+    #benimgcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* raffle edit */
+
+    #rafflecontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        width: 90vw;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    fieldset{
+        margin: 0;
+        padding: 0;
+    }
+    textarea{
+        width: 100%;
+    }
+    .raffleimg{
+        width: 70%;
+        height: 30%;
+    }
+    .raffleimgcontainer{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    
+    /* home edit */
+
+    header{
+        height: 25vh;
+    }
+    nav a{
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+    }
+    nav a:hover{
+        color: darkmagenta;
+        font-size: large;
+    }
+
+     /* about us edit */
+
+     .aboutbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutimg{
+        width: 80%;
+    }
+    .abouttxt{
+        width: 80%;
+    }
+
+    /* contact edit */
+
+    #contacttxt{
+        width: 50vw;
+    }
+
+    /* information edit */
+
+    td, th, tr{
+        padding: 0;
+        height: 7.5vh;
+    }
+    h1, h2{
+        text-align: center;
+    }
+
+    /* benefits edit */
+
+    /* raffle edit */
+
+    #rafflecontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        width: 90vw;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    fieldset{
+        margin: 0;
+        padding: 0;
+    }
+    textarea{
+        width: 100%;
+    }
+    .raffleimg{
+        width: 70%;
+        height: 60%;
+    }
+    .raffleimgcontainer{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width: 100vw;
+    }
+
+}   
